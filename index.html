@@ -3,72 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homem-Aranha: O Herói da Vizinhança</title>
+    <title>Homem-Aranha: O Amigo da Vizinhança</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="https://logodownload.org/wp-content/uploads/2021/08/spider-man-logo-1.png" alt="Logo do Homem-Aranha">
+            <h1>Spider-Man</h1>
         </div>
-        <h1>Homem-Aranha</h1>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#poderes">Poderes</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+            &#9776; 
+        </button>
+        <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#poderes">Poderes</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="sobre" class="content-section">
-            <h2 class="section-title">O Herói da Vizinhança</h2>
-            <div class="content-wrapper">
-                <img src="https://i.pinimg.com/736x/80/7e/5e/807e5e3479a953931165a6c42a2d4263.jpg" alt="Peter Parker como Homem-Aranha" class="section-image">
-                <p>O Homem-Aranha, cujo alter ego é **Peter Parker**, é um dos super-heróis mais icônicos da Marvel. Após ser picado por uma aranha geneticamente modificada, ele adquire habilidades como força e agilidade sobre-humanas, a capacidade de escalar paredes e um "sentido aranha" que o alerta do perigo.</p>
-            </div>
+        <section class="hero">
+            <h2>O Amigo da Vizinhança</h2>
+            <p>Com grandes poderes, vêm grandes responsabilidades.</p>
         </section>
 
-        <section id="habilidades" class="content-section">
-            <h2 class="section-title">Poderes e Habilidades</h2>
-            <div class="content-wrapper">
-                <p>Além de sua força e agilidade, o Homem-Aranha é um gênio científico, o que lhe permite criar seus próprios lança-teias e cartuchos de fluido de teia. Ele é um lutador acrobático e usa seu intelecto para superar vilões mais fortes que ele.</p>
-                <ul class="skills-list">
-                    <li>Força sobre-humana</li>
-                    <li>Agilidade e reflexos aprimorados</li>
-                    <li>Capacidade de escalar paredes</li>
-                    <li>Sentido Aranha (previsão de perigo)</li>
-                    <li>Intelecto genial (especialmente em ciências)</li>
-                </ul>
-            </div>
+        <section id="historia" class="conteudo">
+            <h3>Origem: Peter Parker</h3>
+            <p>Criado por Stan Lee e Steve Ditko, Peter Benjamin Parker apareceu pela primeira vez em **Amazing Fantasy #15** (agosto de 1962). Ele era apenas um jovem estudante órfão, criado por seus tios **Ben e May**, no Queens, Nova York.</p>
+            <p>Sua vida mudou ao ser picado por uma **aranha radioativa** durante uma exposição científica. Inicialmente, ele usou seus poderes para a fama, mas após a morte trágica de seu Tio Ben, ele aprendeu a lição que o define como herói, dedicando-se a proteger a cidade como o Homem-Aranha.</p>
         </section>
 
-        <section id="galeria" class="content-section">
-            <h2 class="section-title">Galeria de Imagens</h2>
-            <div class="gallery-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xV9D7u9D9Rj2k1gRz4fX8e_k4J5yM-q3Lg&s" alt="Homem-Aranha em Nova York">
-                <img src="https://i.insider.com/6249b6b72d164500194856f6?width=1000&format=jpeg&auto=webp" alt="Homem-Aranha em pose de ação">
-                <img src="https://lumiere-a.akamaihd.net/v1/images/p_marvelsspiderman2_2023_main_3b680517.jpeg" alt="Homem-Aranha em uniforme preto">
-                <img src="https://i.ytimg.com/vi/qYJg9Gq8_8w/maxresdefault.jpg" alt="Homem-Aranha e Miles Morales">
-            </div>
+        <section id="poderes" class="conteudo secondary-bg">
+            <h3>Super Habilidades Aracnídeas</h3>
+            <ul>
+                <li>**Superforça e Agilidade:** Proporcionais a uma aranha.</li>
+                <li>**Aderência em Paredes:** Capacidade de grudar e escalar superfícies.</li>
+                <li>**Sentido-Aranha (Spider-Sense):** Um aviso precognitivo de perigo.</li>
+                <li>**Lançadores de Teia:** Dispositivos mecânicos inventados por Peter para disparar teias sintéticas.</li>
+            </ul>
         </section>
 
-        <section id="filmes" class="content-section">
-            <h2 class="section-title">Filmes Populares</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2fJ5N9f72H-Ww9Qj7vH_4M3s8r5k-3m9Cg&s" alt="Homem-Aranha: Sem Volta para Casa">
-                    <h3 class="card-title">Homem-Aranha: Sem Volta para Casa (2021)</h3>
-                    <p class="card-description">Um dos filmes mais aclamados, explorando o multiverso e unindo diferentes versões do herói.</p>
-                </div>
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvE2_D8_yQh0g-M9_8c9Qh8P-8Z6_xK7_mQ&s" alt="Homem-Aranha: De Volta ao Lar">
-                    <h3 class="card-title">Homem-Aranha: De Volta ao Lar (2017)</h3>
-                    <p class="card-description">Apresenta a versão de Peter Parker do MCU, em uma jornada para se provar um herói digno.</p>
-                </div>
-            </div>
+        <section id="curiosidades" class="conteudo">
+            <h3>Fatos Interessantes</h3>
+            <p>O Homem-Aranha foi um dos primeiros super-heróis adolescentes a não ser apenas um "sidekick" (ajudante), mas sim o protagonista principal, o que o tornou extremamente popular.</p>
+            <p>Já foi interpretado nos cinemas por grandes nomes como **Tobey Maguire, Andrew Garfield** e **Tom Holland**, cada um trazendo uma fase icônica do herói para as telas.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Fã-site do Homem-Aranha. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Fã-Page Não Oficial do Homem-Aranha.</p>
     </footer>
 
     <script src="script.js"></script>
